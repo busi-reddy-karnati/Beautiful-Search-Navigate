@@ -1,0 +1,156 @@
+
+.container{
+  width: 35%;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  transform: translate(-50% , -50%);
+}
+
+*{
+	box-sizing: border-box;
+}
+body{
+	background: #25283D;
+	font-family: roboto,Arial;
+}
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+th,td{
+  color: white;
+}
+h1{
+	color: #fff;
+	font-weight: 400;
+}
+input, button{
+	border: none;
+	background: none;
+	outline: none;
+}
+button{
+	cursor: pointer;
+}
+.search-box{
+	display: flex;
+	background: #08090A;
+	border-radius: 4em;
+}
+.search-box-input{
+	width: 0px;
+	font-size: 1em;
+	color: #fff;
+	transition: .5s;
+}
+.search-box-btn{
+	display: flex;
+	border-radius: 50%;
+	width: 4em;
+	height: 4em;
+	background: white;
+	transition: .3s;
+}
+.search-box-icon{
+	margin: auto;
+	color: black;
+}
+.search-box-input::placeholder{
+	color: white;
+	opacity: .7;
+}
+.search-box:hover .search-box-input{
+	padding-left: 2em;
+	padding-right: 1em;
+	width: 340px;
+}
+.search-box-btn:active{
+	transform: scale(.75);
+}
+div.backBtn {
+  width: 100px;
+  left: 100px;
+  top: 100px;
+  background-color: #f4f4f4;
+  transition: all 0.4s ease;
+  position: fixed;
+  cursor: pointer;
+}
+
+span.line {
+  bottom: auto;
+  right: auto;
+  top: auto;
+  left: auto;
+  background-color: #333;
+  border-radius: 10px;
+  width: 100%;
+  left: 0px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  transition: width 0.2s ease 0.1s, left 0.2s ease, transform 0.2s ease 0.3s, background-color 0.2s ease;
+}
+
+span.tLine {
+  top: 0px;
+  background: white;
+}
+
+span.mLine {
+  top: 13px;
+  opacity: 0;
+}
+
+span.bLine {
+  top: 26px;
+  background: white;
+}
+
+.label {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.4s ease;
+  font-size: 1em;
+}
+
+div.backBtn:hover span.label {
+  left: 25px
+}
+
+div.backBtn:hover span.line {
+  left: -10px;
+  height: 5px;
+  background-color: #F76060;
+}
+.label{
+  color: #fffdf8;
+}
+div.backBtn:hover span.tLine {
+  width: 25px;
+  transform: rotate(-45deg);
+  left: -15px;
+  top: 6px;
+}
+
+div.backBtn:hover span.mLine {
+  opacity: 1;
+  width: 30px;
+}
+
+div.backBtn:hover span.bLine {
+  width: 25px;
+  transform: rotate(45deg);
+  left: -15px;
+  top: 20px;
+}
